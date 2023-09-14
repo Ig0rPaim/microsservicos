@@ -1,0 +1,8 @@
+C:\Users\ioliveira\Documents\C#2\WebProjects\BuilderAux\BuilderAux_MVC\obj\Debug\net6.0\BuilderAux_MVC.csproj.AssemblyReference.cache
+C:\Users\ioliveira\Documents\C#2\WebProjects\BuilderAux\BuilderAux_MVC\obj\Debug\net6.0\BuilderAux_MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ioliveira\Documents\C#2\WebProjects\BuilderAux\BuilderAux_MVC\obj\Debug\net6.0\BuilderAux_MVC.AssemblyInfoInputs.cache
+C:\Users\ioliveira\Documents\C#2\WebProjects\BuilderAux\BuilderAux_MVC\obj\Debug\net6.0\BuilderAux_MVC.AssemblyInfo.cs
+C:\Users\ioliveira\Documents\C#2\WebProjects\BuilderAux\BuilderAux_MVC\obj\Debug\net6.0\BuilderAux_MVC.csproj.CoreCompileInputs.cache
+C:\Users\ioliveira\Documents\C#2\WebProjects\BuilderAux\BuilderAux_MVC\obj\Debug\net6.0\BuilderAux_MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ioliveira\Documents\C#2\WebProjects\BuilderAux\BuilderAux_MVC\obj\Debug\net6.0\BuilderAux_MVC.RazorAssemblyInfo.cache
+C:\Users\ioliveira\Documents\C#2\WebProjects\BuilderAux\BuilderAux_MVC\obj\Debug\net6.0\BuilderAux_MVC.RazorAssemblyInfo.cs
