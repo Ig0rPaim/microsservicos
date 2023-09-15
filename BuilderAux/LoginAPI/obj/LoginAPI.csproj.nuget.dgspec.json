@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ioliveira\\Documents\\C#2\\WebProjects\\BuilderAux\\LoginAPI\\LoginAPI.csproj": {}
+    "C:\\Users\\ioliveira\\Documents\\microsservicos\\BuilderAux\\LoginAPI\\LoginAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ioliveira\\Documents\\C#2\\WebProjects\\BuilderAux\\LoginAPI\\LoginAPI.csproj": {
+    "C:\\Users\\ioliveira\\Documents\\microsservicos\\BuilderAux\\LoginAPI\\LoginAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ioliveira\\Documents\\C#2\\WebProjects\\BuilderAux\\LoginAPI\\LoginAPI.csproj",
+        "projectUniqueName": "C:\\Users\\ioliveira\\Documents\\microsservicos\\BuilderAux\\LoginAPI\\LoginAPI.csproj",
         "projectName": "LoginAPI",
-        "projectPath": "C:\\Users\\ioliveira\\Documents\\C#2\\WebProjects\\BuilderAux\\LoginAPI\\LoginAPI.csproj",
+        "projectPath": "C:\\Users\\ioliveira\\Documents\\microsservicos\\BuilderAux\\LoginAPI\\LoginAPI.csproj",
         "packagesPath": "C:\\Users\\ioliveira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ioliveira\\Documents\\C#2\\WebProjects\\BuilderAux\\LoginAPI\\obj\\",
+        "outputPath": "C:\\Users\\ioliveira\\Documents\\microsservicos\\BuilderAux\\LoginAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
