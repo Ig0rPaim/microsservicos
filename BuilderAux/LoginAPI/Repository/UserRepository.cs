@@ -68,13 +68,32 @@ namespace LoginAPI.Repository
             }
         }
 
-        public UserVO Update(UserVO userVO)
+        public UserVO Update(UserVO userVO, int Id)
         {
-            UserModel User = _mapper.Map<UserModel>(userVO);
-            User.DataAtualizacao = DateTime.Now;
-            _dbUser.User.Update(User);
-            _dbUser.SaveChanges();
-            return _mapper.Map<UserVO>(User);
+            try
+            {
+                UserModel UserUpdate = _dbUser.User.FirstOrDefault(x => x.Id == Id) ?? throw new GenericException("Nenhum resultado encontrado");
+                UserModel User = _mapper.Map<UserModel>(userVO);
+                UserUpdate.Nome = User.Nome;
+                UserUpdate.Email = User.Email;
+                UserUpdate.Password = User.Password;
+                UserUpdate.Phone = User.Phone;
+                UserUpdate.DataAtualizacao = DateTime.Now;
+                _dbUser.User.Update(UserUpdate);
+                _dbUser.SaveChanges();
+                return _mapper.Map<UserVO>(UserUpdate);
+            }
+            catch (GenericException e)
+            {
+                Console.WriteLine(e.Message);
+                return null;
+
+            }
+            catch(Exception e) 
+            {
+                Console.WriteLine(e.Message);
+                return null;
+            }
         }
     }
 }

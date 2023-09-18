@@ -16,7 +16,7 @@ namespace LoginAPI.Controllers
         {
             _usersRepository = usersRepository ?? throw new ArgumentNullException(nameof(Repository));
         }
-        [HttpGet]
+        [HttpGet("GetAll")]
         public ActionResult GetAll()
         {
             var User = _usersRepository.GetAll();
@@ -24,7 +24,7 @@ namespace LoginAPI.Controllers
             return Ok(User);
         }
 
-        [HttpGet("{Id}")]
+        [HttpGet("GetById/{Id}")]
         public ActionResult GetById(int Id)
         {
             var User = _usersRepository.GetById(Id);
@@ -32,27 +32,32 @@ namespace LoginAPI.Controllers
             return Ok(User);
         }
 
-        [HttpPost]
+        [HttpPost("Create")]
         public ActionResult Create([FromBody] UserVO UserVO)
         {
-            if (UserVO == null) { return BadRequest(); }
+
+            if (UserVO == null) { return BadRequest("Entidade Vazia"); }
+            if (!UserVO.IsValid) { return BadRequest(UserVO.Notifications); }
+
             var User = _usersRepository.Create(UserVO);
             return Ok(User);
         }
 
-        [HttpPut]
-        public ActionResult Update([FromBody] UserVO UserVO)
+        [HttpPut("Update/{Id}")]
+        public ActionResult Update([FromBody] UserVO UserVO, int Id)
         {
-            if (UserVO == null) { return BadRequest(); }
-            var User = _usersRepository.Update(UserVO);
+            if (UserVO == null) { return BadRequest("Entidade Vazia"); }
+            if (!UserVO.IsValid) { return BadRequest(UserVO.Notifications); }
+            var User = _usersRepository.Update(UserVO, Id);
+            if(User == null) { return BadRequest("Usuario não encontrado"); }
             return Ok(User);
         }
 
-        [HttpDelete("{Id}")]
+        [HttpDelete("Delete/{Id}")]
         public ActionResult Delete(int Id)
         {
             var Status = _usersRepository.Delete(Id);
-            if (User == null) { return BadRequest();}
+            if (Status == null) { return BadRequest();}
             return Ok(Status);
         }
     }

@@ -7,7 +7,7 @@ namespace LoginAPI.Repository
         List<UserVO> GetAll();
         UserVO GetById(int id);
         UserVO Create(UserVO userVO);
-        UserVO Update(UserVO userVO);
+        UserVO Update(UserVO userVO, int Id);
         bool Delete(int id);
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rkUHe695KBK5m5HclHhEPbpU2azzPQtJpXbTTAWK+vJlxnMnA1UQb0hypWunx+Xx6V9juNbWIrl2++9JWRVbbA==",
+  "dgSpecHash": "aB5DbD+wrsf+1heA02wy58IEskud8rlMRslOIU0Xe6rRbtA+uxhY15fXKsZUpPB56h7xQKnwOwb2ZsiW7theqw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ioliveira\\Documents\\microsservicos\\BuilderAux\\LoginAPI\\LoginAPI.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\ioliveira\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\ioliveira\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\ioliveira\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\ioliveira\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\ioliveira\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ioliveira\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\ioliveira\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

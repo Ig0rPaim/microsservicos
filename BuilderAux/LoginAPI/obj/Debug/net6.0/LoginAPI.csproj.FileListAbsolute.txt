@@ -178,3 +178,4 @@ C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\obj\Debug\net6.0
 C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\obj\Debug\net6.0\LoginAPI.pdb
 C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\obj\Debug\net6.0\LoginAPI.genruntimeconfig.cache
 C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\obj\Debug\net6.0\ref\LoginAPI.dll
+C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\bin\Debug\net6.0\Flunt.dll
