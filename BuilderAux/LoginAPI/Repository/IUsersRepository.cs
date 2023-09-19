@@ -4,10 +4,10 @@ namespace LoginAPI.Repository
 {
     public interface IUsersRepository
     {
-        List<UserVO> GetAll();
-        UserVO GetById(int id);
-        UserVO Create(UserVO userVO);
-        UserVO Update(UserVO userVO, int Id);
-        bool Delete(int id);
+        IResult GetAll();
+        //UserVO GetById(int id);
+        IResult Create(UserVO userVO);
+        //UserVO Update(UserVO userVO, int Id);
+        //bool Delete(int id);
     }
 }

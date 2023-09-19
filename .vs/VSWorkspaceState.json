@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\BuilderAux",
-    "\\BuilderAux\\BuiderAux.IdentityServer"
+    "\\BuilderAux\\BuiderAux.IdentityServer",
+    "\\BuilderAux\\LoginAPI",
+    "\\BuilderAux\\LoginAPI\\Controllers"
   ],
+  "SelectedNode": "\\BuilderAux\\LoginAPI\\Controllers\\UserController.cs",
   "PreviewInSolutionExplorer": false
 }

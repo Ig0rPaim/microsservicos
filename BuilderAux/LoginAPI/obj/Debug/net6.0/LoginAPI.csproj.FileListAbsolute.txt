@@ -179,3 +179,8 @@ C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\obj\Debug\net6.0
 C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\obj\Debug\net6.0\LoginAPI.genruntimeconfig.cache
 C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\obj\Debug\net6.0\ref\LoginAPI.dll
 C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\bin\Debug\net6.0\Flunt.dll
+C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ioliveira\Documents\microsservicos\BuilderAux\LoginAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

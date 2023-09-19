@@ -15,7 +15,7 @@ namespace LoginAPI.ValuesObjects
 
         public UserVO(int id, string nome, string password, string email, string phone)
         {
-            var contract = new Contract<UserVO>()
+            var contract = new Contract<UserVO>() //Flunt
                 .Requires()
                 .IsNotNull(id, "Id", "Campo Id vazio")
                 .IsNotNullOrEmpty(nome, "Nome", "Campo nome vazio")
