@@ -4,6 +4,7 @@
     {
         public GenericException()
         {
+            throw new BadHttpRequestException("Usuário não encontrado");
         }
 
         public GenericException(string mensagem) : base(mensagem)

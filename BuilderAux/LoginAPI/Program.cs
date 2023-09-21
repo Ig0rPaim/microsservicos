@@ -19,7 +19,7 @@ builder.Services.AddScoped<IUsersRepository, UserRepository>();
 IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 builder.Services.AddSingleton(mapper);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-builder.Services.AddAutoMapper(typeof(MappingProfile));
+//builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddHttpClient<IUserServices>();
 

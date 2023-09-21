@@ -5,9 +5,9 @@ namespace LoginAPI.Repository
     public interface IUsersRepository
     {
         IResult GetAll();
-        //UserVO GetById(int id);
-        IResult Create(UserVO userVO);
-        //UserVO Update(UserVO userVO, int Id);
-        //bool Delete(int id);
+        IResult GetByEmail(string Email);
+        IResult Create(UserVOIn userVO);
+        Task<IResult> UpdateAsync(UserVOIn userVOIn, string Email);
+        bool Delete(string Email);
     }
 }

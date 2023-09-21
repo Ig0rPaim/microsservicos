@@ -1,4 +1,5 @@
-﻿using LoginAPI.Models;
+﻿using LoginAPI.Exceptions;
+using LoginAPI.Models;
 using LoginAPI.Repository;
 using LoginAPI.ValuesObjects;
 using Microsoft.AspNetCore.Http;
@@ -24,16 +25,27 @@ namespace LoginAPI.Controllers
             return Ok(User);
         }
 
-        //[HttpGet("GetById/{Id}")]
-        //public ActionResult GetById(int Id)
-        //{
-        //    var User = _usersRepository.GetById(Id);
-        //    if (User.Id <= 0) { return NotFound(); }
-        //    return Ok(User);
-        //}
+        [HttpGet("GetByEmail/{Email}")]
+        public ActionResult GetById(string Email)
+        {
+            try
+            {
+                var User = _usersRepository.GetByEmail(Email);
+                //if (User.Id <= 0) { return NotFound(); }
+                return Ok(User);
+            }
+            catch (GenericException e)
+            {
+                return BadRequest(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
 
         [HttpPost("Create")]
-        public ActionResult Create([FromBody] UserVO UserVO)
+        public ActionResult Create([FromBody] UserVOIn UserVO)
         {
 
             if (UserVO == null) { return BadRequest("Entidade Vazia"); }
@@ -43,22 +55,44 @@ namespace LoginAPI.Controllers
             return Ok(User);
         }
 
-        //[HttpPut("Update/{Id}")]
-        //public ActionResult Update([FromBody] UserVO UserVO, int Id)
-        //{
-        //    if (UserVO == null) { return BadRequest("Entidade Vazia"); }
-        //    if (!UserVO.IsValid) { return BadRequest(UserVO.Notifications); }
-        //    var User = _usersRepository.Update(UserVO, Id);
-        //    if(User == null) { return BadRequest("Usuario não encontrado"); }
-        //    return Ok(User);
-        //}
+        [HttpPut("Update/{Email}")]
+        public ActionResult Update([FromBody] UserVOIn UserVOIn, string Email)
+        {
+            try
+            {
+                if (UserVOIn == null) { return BadRequest("Entidade Vazia"); }
+                if (!UserVOIn.IsValid) { return BadRequest(UserVOIn.Notifications); }
+                var User = _usersRepository.UpdateAsync(UserVOIn, Email);
+                //if (User == null) { return BadRequest("Usuario não encontrado"); }
+                return Ok(User);
+            }
+            catch (GenericException e)
+            {
+                return BadRequest(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
 
-        //[HttpDelete("Delete/{Id}")]
-        //public ActionResult Delete(int Id)
-        //{
-        //    var Status = _usersRepository.Delete(Id);
-        //    if (Status == false) { return BadRequest();}
-        //    return Ok(Status);
-        //}
+        [HttpDelete("Delete/{Email}")]
+        public ActionResult Delete(string Email)
+        {
+            try
+            {
+                var Status = _usersRepository.Delete(Email);
+                //if (Status == false) { return BadRequest(); }
+                return Ok(Status);
+            }
+            catch (GenericException e)
+            {
+                return BadRequest(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
     }
 }

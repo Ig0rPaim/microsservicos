@@ -11,10 +11,12 @@ namespace LoginAPI.Config
         {
             return new MapperConfiguration(config =>
             {
-                config.CreateMap<UserVO, UserModel>();
-                config.CreateMap<UserModel, UserVO>();
-                config.CreateMap<IdentityUser, UserVO>();
-                config.CreateMap<UserVO, IdentityUser>();
+                config.CreateMap<UserVOIn, UserModel>();
+                config.CreateMap<UserModel, UserVOIn>();
+                config.CreateMap<IdentityUser, UserVOIn>();
+                config.CreateMap<UserVOIn, IdentityUser>();
+                config.CreateMap<UserVOIn, UserVOOut>();
+                config.CreateMap<UserVOOut, UserVOIn>();
 
             });
         }
